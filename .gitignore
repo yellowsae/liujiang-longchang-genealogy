@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# 本地构建打包产物
+dist.zip
+
+# 第三方 skills 合集（.agents/skills 与 .claude/skills 为同一套的两份副本）
+# 由安装机制维护，按 skills-lock.json 还原
+.agents/
+.claude/skills/
+
+# Claude Code 本地设置
+.claude/settings.local.json

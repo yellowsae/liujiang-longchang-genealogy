@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "title": "六讲村隆昌公支系族谱",
+    "source": "六讲村隆昌公支系族谱照片（第132页）",
+    "residence": "宾阳县思陇镇黄冠六讲北良村等",
+    "population": 106,
+    "generationNumbering": "隆昌公为第一代，共 15 代（采用正文“二、按世代整理”口径；与“一、世代总览”表相差一代，本数据统一采用前者）",
+    "sourceNote": "本文依据照片中的可辨认文字整理。原图存在透印、模糊等情况，少数字词无法完全确认，已在数据中以 verify 标注。妻氏信息按原谱中的“妻某氏，子……”方式保留。",
+    "publisherNote": "本数据目前适合作为“第一版族谱文字录入稿”，不建议直接作为最终校订版族谱。建议用相邻页或更高清原图对标注为待核的内容进行二次校对。",
+    "verifyField": "verify.target 取值：self（本人姓名/世系存疑，界面上于名字旁标记）或 offspring（本人姓名无疑、但子女信息未能辨认，仅列入待核清单）"
+  },
+  "generations": [
+    { "index": 1, "char": null, "label": "隆昌公" },
+    { "index": 2, "char": "云" },
+    { "index": 3, "char": "路" },
+    { "index": 4, "char": "淋" },
+    { "index": 5, "char": "道" },
+    { "index": 6, "char": "文" },
+    { "index": 7, "char": "周" },
+    { "index": 8, "char": "呈" },
+    { "index": 9, "char": "仁" },
+    { "index": 10, "char": "书" },
+    { "index": 11, "char": "崇" },
+    { "index": 12, "char": "启" },
+    { "index": 13, "char": "德" },
+    { "index": 14, "char": "之" },
+    { "index": 15, "char": "云、黄、妹" }
+  ],
+  "people": [
+    { "id": "longchang", "name": "隆昌公", "generation": 1, "gender": "male", "parentId": null, "spouseIds": [], "notes": [] },
+
+    { "id": "yuncheng", "name": "云城", "generation": 2, "gender": "male", "parentId": "longchang", "spouseIds": [], "notes": [] },
+    { "id": "yunyang", "name": "云养", "generation": 2, "gender": "male", "parentId": "longchang", "spouseIds": [], "notes": [] },
+
+    { "id": "luxian", "name": "路仙", "generation": 3, "gender": "male", "parentId": "yunyang", "spouseIds": [], "notes": [] },
+
+    { "id": "linbi", "name": "淋笔", "generation": 4, "gender": "male", "parentId": "luxian", "spouseIds": [], "notes": ["原谱注：“三子移住云南老街”（所指支系待考）"], "verify": { "target": "self", "note": "字形待核（原图较模糊）" } },
+
+    { "id": "daolong", "name": "道隆", "generation": 5, "gender": "male", "parentId": "linbi", "spouseIds": [], "notes": [] },
+
+    { "id": "wenzhao", "name": "文照", "generation": 6, "gender": "male", "parentId": "daolong", "spouseIds": [], "notes": [] },
+    { "id": "wenzhen", "name": "文珍", "generation": 6, "gender": "male", "parentId": "daolong", "spouseIds": [], "notes": [] },
+    { "id": "wende", "name": "文德", "generation": 6, "gender": "male", "parentId": "daolong", "spouseIds": [], "notes": [] },
+    { "id": "wensheng", "name": "文生", "generation": 6, "gender": "male", "parentId": "daolong", "spouseIds": [], "notes": [] },
+
+    { "id": "zhougun", "name": "周鲧", "generation": 7, "gender": "male", "parentId": "wensheng", "spouseIds": [], "notes": [], "verify": { "target": "self", "note": "字形待核（原图字形较难确认）" } },
+
+    { "id": "chenglan", "name": "呈兰", "generation": 8, "gender": "male", "parentId": "zhougun", "spouseIds": [], "notes": [] },
+    { "id": "chengfang", "name": "呈芳", "generation": 8, "gender": "male", "parentId": "zhougun", "spouseIds": [], "notes": [] },
+
+    { "id": "renyang", "name": "仁扬", "generation": 9, "gender": "male", "parentId": "chengfang", "spouseIds": [], "notes": [] },
+    { "id": "renheng", "name": "仁恒", "generation": 9, "gender": "male", "parentId": "chengfang", "spouseIds": [], "notes": [] },
+
+    { "id": "shulin", "name": "书林", "generation": 10, "gender": "male", "parentId": "renheng", "spouseIds": [], "notes": [] },
+    { "id": "shuchun", "name": "书春", "generation": 10, "gender": "male", "parentId": "renheng", "spouseIds": [], "notes": [] },
+
+    { "id": "chongxi", "name": "崇熙", "generation": 11, "gender": "male", "parentId": "shulin", "spouseIds": [], "notes": [] },
+    { "id": "chonggao", "name": "崇高", "generation": 11, "gender": "male", "parentId": "shuchun", "spouseIds": [], "notes": [] },
+
+    { "id": "qiming", "name": "启明", "generation": 12, "gender": "male", "parentId": "chongxi", "spouseIds": [], "notes": ["原谱中于第十代（崇熙子）与第十二代“其他”两处重复出现，已合并为一人"] },
+    { "id": "qizhang", "name": "启章", "generation": 12, "gender": "male", "parentId": "chonggao", "spouseIds": [], "notes": [] },
+    { "id": "qirong", "name": "启荣", "generation": 12, "gender": "male", "parentId": "chonggao", "spouseIds": [], "notes": [] },
+    { "id": "qiyan", "name": "启燕", "generation": 12, "gender": "male", "parentId": "chonggao", "spouseIds": [], "notes": [] },
+    { "id": "qixun", "name": "启勋", "generation": 12, "gender": "male", "parentId": "chonggao", "spouseIds": [], "notes": [] },
+
+    { "id": "deguang", "name": "德光", "generation": 13, "gender": "male", "parentId": "qiming", "spouseIds": [], "notes": [] },
+
+    { "id": "deying", "name": "德英", "generation": 13, "gender": "male", "parentId": "qirong", "spouseIds": ["deying-spouse"], "notes": [] },
+    { "id": "deying-spouse", "name": "柳氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["deying"], "notes": [], "isSpouseOnly": true },
+    { "id": "dexiong", "name": "德雄", "generation": 13, "gender": "male", "parentId": "qirong", "spouseIds": ["dexiong-spouse"], "notes": [] },
+    { "id": "dexiong-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dexiong"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "dejia", "name": "德甲", "generation": 13, "gender": "male", "parentId": "qiyan", "spouseIds": ["dejia-spouse"], "notes": [] },
+    { "id": "dejia-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dejia"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "dexing", "name": "德星", "generation": 13, "gender": "male", "parentId": "qixun", "spouseIds": ["dexing-spouse"], "notes": [] },
+    { "id": "dexing-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dexing"], "notes": [], "isSpouseOnly": true },
+    { "id": "dehao", "name": "德昊", "generation": 13, "gender": "male", "parentId": "qixun", "spouseIds": ["dehao-spouse"], "notes": [] },
+    { "id": "dehao-spouse", "name": "覃氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dehao"], "notes": [], "isSpouseOnly": true },
+    { "id": "dejie", "name": "德结", "generation": 13, "gender": "male", "parentId": "qixun", "spouseIds": ["dejie-spouse"], "notes": [] },
+    { "id": "dejie-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dejie"], "notes": [], "isSpouseOnly": true },
+    { "id": "dezhen", "name": "德真", "generation": 13, "gender": "male", "parentId": "qixun", "spouseIds": ["dezhen-spouse"], "notes": [] },
+    { "id": "dezhen-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["dezhen"], "notes": [], "isSpouseOnly": true },
+    { "id": "deye", "name": "德业", "generation": 13, "gender": "male", "parentId": "qixun", "spouseIds": ["deye-spouse"], "notes": [] },
+    { "id": "deye-spouse", "name": "韦氏", "generation": 13, "gender": "female", "parentId": null, "spouseIds": ["deye"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "zhichun", "name": "之春", "generation": 14, "gender": "male", "parentId": "deying", "spouseIds": ["zhichun-spouse"], "notes": [] },
+    { "id": "zhichun-spouse", "name": "谭氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhichun"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhichu", "name": "之初", "generation": 14, "gender": "male", "parentId": "deying", "spouseIds": ["zhichu-spouse"], "notes": [] },
+    { "id": "zhichu-spouse", "name": "赵氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhichu"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "zhiqiu", "name": "之球", "generation": 14, "gender": "male", "parentId": "dexiong", "spouseIds": ["zhiqiu-spouse"], "notes": [] },
+    { "id": "zhiqiu-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiqiu"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhilai", "name": "之来", "generation": 14, "gender": "male", "parentId": "dexiong", "spouseIds": ["zhilai-spouse"], "notes": [] },
+    { "id": "zhilai-spouse", "name": "柳氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhilai"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhixiang", "name": "之祥", "generation": 14, "gender": "male", "parentId": "dexiong", "spouseIds": ["zhixiang-spouse"], "notes": [], "verify": { "target": "offspring", "note": "子女：照片中未能明确辨认" } },
+    { "id": "zhixiang-spouse", "name": "柳氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhixiang"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "zhijian", "name": "之健", "generation": 14, "gender": "male", "parentId": "dejia", "spouseIds": ["zhijian-spouse"], "notes": [] },
+    { "id": "zhijian-spouse", "name": "李氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhijian"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhigai", "name": "之概", "generation": 14, "gender": "male", "parentId": "dejia", "spouseIds": ["zhigai-spouse"], "notes": [], "verify": { "target": "self", "note": "字形待核（可能存在其他相近字形）" } },
+    { "id": "zhigai-spouse", "name": "覃氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhigai"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhiqin", "name": "之秦", "generation": 14, "gender": "male", "parentId": "dejia", "spouseIds": ["zhiqin-spouse"], "notes": [] },
+    { "id": "zhiqin-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiqin"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhiqian", "name": "之乾", "generation": 14, "gender": "male", "parentId": "dejia", "spouseIds": ["zhiqian-spouse"], "notes": [] },
+    { "id": "zhiqian-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiqian"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhibin", "name": "之斌", "generation": 14, "gender": "male", "parentId": "dejia", "spouseIds": [], "notes": [], "verify": { "target": "offspring", "note": "子女：照片中未能明确辨认" } },
+
+    { "id": "zhijun", "name": "之军", "generation": 14, "gender": "male", "parentId": "dexing", "spouseIds": ["zhijun-spouse"], "notes": [] },
+    { "id": "zhijun-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhijun"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhizheng", "name": "之正", "generation": 14, "gender": "male", "parentId": "dexing", "spouseIds": ["zhizheng-spouse"], "notes": [] },
+    { "id": "zhizheng-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhizheng"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhikang", "name": "之康", "generation": 14, "gender": "male", "parentId": "dexing", "spouseIds": ["zhikang-spouse"], "notes": [] },
+    { "id": "zhikang-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhikang"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhichuang", "name": "之创", "generation": 14, "gender": "male", "parentId": "dexing", "spouseIds": ["zhichuang-spouse"], "notes": [] },
+    { "id": "zhichuang-spouse", "name": "徐氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhichuang"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhitai", "name": "之太", "generation": 14, "gender": "male", "parentId": "dexing", "spouseIds": [], "notes": [] },
+
+    { "id": "zhijun2", "name": "之骏", "generation": 14, "gender": "male", "parentId": "dehao", "spouseIds": ["zhijun2-spouse"], "notes": [] },
+    { "id": "zhijun2-spouse", "name": "唐氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhijun2"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "zhishou", "name": "之寿", "generation": 14, "gender": "male", "parentId": "dejie", "spouseIds": ["zhishou-spouse"], "notes": [] },
+    { "id": "zhishou-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhishou"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhiheng", "name": "之恒", "generation": 14, "gender": "male", "parentId": "dejie", "spouseIds": ["zhiheng-spouse"], "notes": [] },
+    { "id": "zhiheng-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiheng"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhili", "name": "之礼", "generation": 14, "gender": "male", "parentId": "dejie", "spouseIds": ["zhili-spouse"], "notes": [] },
+    { "id": "zhili-spouse", "name": "李氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhili"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhicong", "name": "之从", "generation": 14, "gender": "male", "parentId": "dejie", "spouseIds": ["zhicong-spouse"], "notes": [], "verify": { "target": "offspring", "note": "子女：照片中未能明确辨认" } },
+    { "id": "zhicong-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhicong"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhifu", "name": "之福", "generation": 14, "gender": "male", "parentId": "dejie", "spouseIds": ["zhifu-spouse"], "notes": [] },
+    { "id": "zhifu-spouse", "name": "本氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhifu"], "notes": [], "verify": { "target": "self", "note": "姓氏字形误认，“本”非其真实姓氏，实际姓氏未知" }, "isSpouseOnly": true },
+
+    { "id": "zhiliang", "name": "之亮", "generation": 14, "gender": "male", "parentId": "dezhen", "spouseIds": ["zhiliang-spouse"], "notes": [] },
+    { "id": "zhiliang-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiliang"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhiyuan", "name": "之源", "generation": 14, "gender": "male", "parentId": "dezhen", "spouseIds": ["zhiyuan-spouse"], "notes": [], "verify": { "target": "offspring", "note": "子女：照片中未能明确辨认" } },
+    { "id": "zhiyuan-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhiyuan"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhimin", "name": "之民", "generation": 14, "gender": "male", "parentId": "dezhen", "spouseIds": [], "notes": [] },
+    { "id": "zhiting", "name": "之挺", "generation": 14, "gender": "male", "parentId": "dezhen", "spouseIds": [], "notes": [] },
+
+    { "id": "zhichao", "name": "之超", "generation": 14, "gender": "male", "parentId": "deye", "spouseIds": ["zhichao-spouse"], "notes": [] },
+    { "id": "zhichao-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhichao"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhilin", "name": "之琳", "generation": 14, "gender": "male", "parentId": "deye", "spouseIds": ["zhilin-spouse"], "notes": [] },
+    { "id": "zhilin-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhilin"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhihuo", "name": "之活", "generation": 14, "gender": "male", "parentId": "deye", "spouseIds": ["zhihuo-spouse"], "notes": [] },
+    { "id": "zhihuo-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhihuo"], "notes": [], "isSpouseOnly": true },
+    { "id": "zhisi", "name": "之思", "generation": 14, "gender": "male", "parentId": "deye", "spouseIds": ["zhisi-spouse"], "notes": [] },
+    { "id": "zhisi-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhisi"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "zhitai2", "name": "之泰", "generation": 14, "gender": "male", "parentId": null, "spouseIds": ["zhitai2-spouse"], "notes": ["原谱未载其父系归属（另：原图此字与“之太”为两人，勿合并）"], "verify": { "target": "self", "note": "1) 原图字形需进一步确认；2) 父系归属原谱未载，待补" } },
+    { "id": "zhitai2-spouse", "name": "韦氏", "generation": 14, "gender": "female", "parentId": null, "spouseIds": ["zhitai2"], "notes": [], "isSpouseOnly": true },
+
+    { "id": "yunxi", "name": "云喜", "generation": 15, "gender": "male", "parentId": "zhichun", "spouseIds": [], "notes": [] },
+    { "id": "yunhe", "name": "云贺", "generation": 15, "gender": "male", "parentId": "zhichun", "spouseIds": [], "notes": [] },
+    { "id": "yunmao", "name": "云茂", "generation": 15, "gender": "male", "parentId": "zhichun", "spouseIds": [], "notes": [] },
+
+    { "id": "meiqian", "name": "妹茜", "generation": 15, "gender": "female", "parentId": "zhichu", "spouseIds": [], "notes": [] },
+
+    { "id": "yuntian", "name": "云天", "generation": 15, "gender": "male", "parentId": "zhiqiu", "spouseIds": [], "notes": [] },
+    { "id": "yunfei", "name": "云飞", "generation": 15, "gender": "male", "parentId": "zhiqiu", "spouseIds": [], "notes": [] },
+
+    { "id": "yuncong", "name": "云聪", "generation": 15, "gender": "male", "parentId": "zhilai", "spouseIds": [], "notes": [] },
+
+    { "id": "yunqiang", "name": "云强", "generation": 15, "gender": "male", "parentId": "zhijian", "spouseIds": [], "notes": [] },
+    { "id": "yunlong", "name": "云龙", "generation": 15, "gender": "male", "parentId": "zhijian", "spouseIds": [], "notes": [] },
+
+    { "id": "yunmeng", "name": "云猛", "generation": 15, "gender": "male", "parentId": "zhiqin", "spouseIds": [], "notes": [] },
+    { "id": "yunmei", "name": "云梅", "generation": 15, "gender": "male", "parentId": "zhiqin", "spouseIds": [], "notes": [] },
+
+    { "id": "shanshan", "name": "珊珊", "generation": 15, "gender": "female", "parentId": "zhigai", "spouseIds": [], "notes": [] },
+
+    { "id": "yunhu", "name": "云虎", "generation": 15, "gender": "male", "parentId": "zhiqian", "spouseIds": [], "notes": [] },
+
+    { "id": "huangbin", "name": "黄斌", "generation": 15, "gender": "male", "parentId": "zhijun", "spouseIds": [], "notes": [] },
+    { "id": "huangjian", "name": "黄坚", "generation": 15, "gender": "male", "parentId": "zhijun", "spouseIds": [], "notes": [] },
+
+    { "id": "huangxin", "name": "黄新", "generation": 15, "gender": "male", "parentId": "zhizheng", "spouseIds": [], "notes": [] },
+    { "id": "huangming", "name": "黄明", "generation": 15, "gender": "male", "parentId": "zhizheng", "spouseIds": [], "notes": [] },
+    { "id": "huangyan", "name": "黄燕", "generation": 15, "gender": "female", "parentId": "zhizheng", "spouseIds": [], "notes": [] },
+
+    { "id": "yunwei", "name": "云伟", "generation": 15, "gender": "male", "parentId": "zhikang", "spouseIds": [], "notes": [] },
+    { "id": "yunning", "name": "云宁", "generation": 15, "gender": "male", "parentId": "zhikang", "spouseIds": [], "notes": [] },
+
+    { "id": "yunliang", "name": "云良", "generation": 15, "gender": "male", "parentId": "zhichuang", "spouseIds": [], "notes": [] },
+
+    { "id": "yunjiao", "name": "云娇", "generation": 15, "gender": "female", "parentId": "zhitai2", "spouseIds": [], "notes": [] },
+
+    { "id": "yunjian", "name": "云健", "generation": 15, "gender": "male", "parentId": "zhijun2", "spouseIds": [], "notes": [] },
+    { "id": "yunyu", "name": "云宇", "generation": 15, "gender": "male", "parentId": "zhijun2", "spouseIds": [], "notes": [] },
+    { "id": "yunyan", "name": "云艳", "generation": 15, "gender": "female", "parentId": "zhijun2", "spouseIds": [], "notes": [] },
+
+    { "id": "yunhua", "name": "云华", "generation": 15, "gender": "male", "parentId": "zhishou", "spouseIds": [], "notes": [] },
+    { "id": "yunwei2", "name": "云威", "generation": 15, "gender": "male", "parentId": "zhishou", "spouseIds": [], "notes": [] },
+    { "id": "meirong", "name": "妹蓉", "generation": 15, "gender": "female", "parentId": "zhishou", "spouseIds": [], "notes": [] },
+
+    { "id": "meiling", "name": "妹玲", "generation": 15, "gender": "female", "parentId": "zhiheng", "spouseIds": [], "notes": [] },
+    { "id": "meiting", "name": "妹婷", "generation": 15, "gender": "female", "parentId": "zhiheng", "spouseIds": [], "notes": [] },
+
+    { "id": "meidong", "name": "妹东", "generation": 15, "gender": "male", "parentId": "zhili", "spouseIds": [], "notes": ["原谱记为“子”，名中带“妹”字（依原谱保留）"] },
+
+    { "id": "yunzhong", "name": "云忠", "generation": 15, "gender": "male", "parentId": "zhifu", "spouseIds": [], "notes": [] },
+    { "id": "yunfeng", "name": "云凤", "generation": 15, "gender": "female", "parentId": "zhifu", "spouseIds": [], "notes": [] },
+
+    { "id": "yuntong", "name": "云通", "generation": 15, "gender": "male", "parentId": "zhiliang", "spouseIds": [], "notes": [] }
+  ]
+}
