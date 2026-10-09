@@ -196,7 +196,7 @@
     { "id": "meiling", "name": "妹玲", "generation": 15, "gender": "female", "parentId": "zhiheng", "spouseIds": [], "notes": [] },
     { "id": "meiting", "name": "妹婷", "generation": 15, "gender": "female", "parentId": "zhiheng", "spouseIds": [], "notes": [] },
 
-    { "id": "meidong", "name": "妹东", "generation": 15, "gender": "male", "parentId": "zhili", "spouseIds": [], "notes": ["原谱记为“子”，名中带“妹”字（依原谱保留）"] },
+    { "id": "meidong", "name": "小冬", "generation": 15, "gender": "male", "parentId": "zhili", "spouseIds": [], "notes": [] },
 
     { "id": "yunzhong", "name": "云忠", "generation": 15, "gender": "male", "parentId": "zhifu", "spouseIds": [], "notes": [] },
     { "id": "yunfeng", "name": "云凤", "generation": 15, "gender": "female", "parentId": "zhifu", "spouseIds": [], "notes": [] },
