@@ -1,6 +1,12 @@
 import { useState } from "react"
 import { ChevronDown, ChevronRight } from "lucide-react"
-import { childrenOf, getPerson, spousesOf, type Person } from "@/lib/genealogy"
+import {
+  childrenOf,
+  descendantsOf,
+  getPerson,
+  spousesOf,
+  type Person,
+} from "@/lib/genealogy"
 import PersonLink from "@/components/PersonLink"
 
 function Spouses({ person }: { person: Person }) {
@@ -25,6 +31,7 @@ function TreeNode({
   const children = childrenOf(person.id)
   const hasChildren = children.length > 0
   const [open, setOpen] = useState(() => isDefaultOpen(depth))
+  const hiddenCount = hasChildren ? descendantsOf(person.id).length : 0
 
   return (
     <li>
@@ -35,7 +42,7 @@ function TreeNode({
             onClick={() => setOpen((o) => !o)}
             aria-expanded={open}
             aria-label={open ? "收起" : "展开"}
-            className="-ml-1 mr-0.5 mt-0.5 flex size-5 shrink-0 items-center justify-center rounded text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            className="mr-0.5 mt-0.5 flex size-5 shrink-0 items-center justify-center rounded text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
           >
             {open ? (
               <ChevronDown className="size-4" />
@@ -52,14 +59,14 @@ function TreeNode({
           <Spouses person={person} />
           {hasChildren && !open && (
             <span className="ml-1.5 text-xs text-muted-foreground">
-              其后 {children.length} 人
+              其后 {hiddenCount} 人
             </span>
           )}
         </div>
       </div>
 
       {hasChildren && open && (
-        <ul className="ml-2.5 border-l border-border pl-2.5 sm:ml-3 sm:pl-3.5">
+        <ul>
           {children.map((child) => (
             <TreeNode
               key={child.id}
@@ -84,8 +91,10 @@ export default function LineageTree({
   const root = getPerson(rootId)
   if (!root) return null
   return (
-    <ul className="text-sm">
-      <TreeNode person={root} depth={0} isDefaultOpen={isDefaultOpen} />
-    </ul>
+    <div className="lineage text-sm">
+      <ul>
+        <TreeNode person={root} depth={0} isDefaultOpen={isDefaultOpen} />
+      </ul>
+    </div>
   )
 }

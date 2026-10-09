@@ -1,15 +1,15 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import {
   ROOT_ID,
   data,
+  houses,
   meta,
   namedPeople,
   peopleWithVerify,
 } from "@/lib/genealogy"
-import LineageTree from "@/components/LineageTree"
+import HouseBlock from "@/components/HouseBlock"
+import HouseOverview from "@/components/HouseOverview"
 import PersonLink from "@/components/PersonLink"
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -18,66 +18,32 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-type Mode = "default" | "all" | "none"
-
 export default function HomePage() {
-  const [mode, setMode] = useState<Mode>("default")
-
-  const isDefaultOpen = (depth: number) =>
-    mode === "all" ? true : mode === "none" ? false : depth < 10
-
   const unlinked = namedPeople.filter(
     (p) => p.parentId === null && p.id !== ROOT_ID,
   )
   const verifyCount = peopleWithVerify().length
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       <section>
         <h1 className="font-serif-cn text-2xl font-semibold tracking-wide">
           六讲村隆昌公支系族谱
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          居 {meta.residence} · 现有人口 {meta.population} 人 · 本谱载{" "}
-          {namedPeople.length} 人 · 共 {data.generations.length} 代
+          居 {meta.residence} · 本谱载 {namedPeople.length} 人 · 共{" "}
+          {data.generations.length} 代 · 分 {houses.length} 房
         </p>
       </section>
 
-      <div className="flex flex-wrap items-center gap-2">
-        <Button
-          size="sm"
-          variant={mode === "default" ? "secondary" : "outline"}
-          onClick={() => setMode("default")}
-        >
-          默认
-        </Button>
-        <Button
-          size="sm"
-          variant={mode === "all" ? "secondary" : "outline"}
-          onClick={() => setMode("all")}
-        >
-          展开全部
-        </Button>
-        <Button
-          size="sm"
-          variant={mode === "none" ? "secondary" : "outline"}
-          onClick={() => setMode("none")}
-        >
-          全部收起
-        </Button>
-        <Link
-          to="/verify"
-          className="ml-auto text-xs text-primary underline underline-offset-4"
-        >
-          待核 {verifyCount} 处
-        </Link>
-      </div>
+      <HouseOverview />
 
-      <Card>
-        <CardContent className="pt-5">
-          <LineageTree key={mode} rootId={ROOT_ID} isDefaultOpen={isDefaultOpen} />
-        </CardContent>
-      </Card>
+      <section className="space-y-4">
+        <h2 className="font-serif-cn text-lg font-semibold">分房垂丝</h2>
+        {houses.map((house) => (
+          <HouseBlock key={house.id} house={house} />
+        ))}
+      </section>
 
       {unlinked.length > 0 && (
         <Card>
@@ -107,13 +73,14 @@ export default function HomePage() {
 
       <p className="text-xs leading-relaxed text-muted-foreground">
         点击任一姓名进入其人物页，
-        <Link
-          to="/search"
-          className="text-primary underline underline-offset-4"
-        >
+        <Link to="/search" className="text-primary underline underline-offset-4">
           搜索姓名
         </Link>
-        可直接定位。标有「待核」者，原图字迹不清或尚未二次校对。
+        可直接定位。全谱共{" "}
+        <Link to="/verify" className="text-primary underline underline-offset-4">
+          {verifyCount} 处待核
+        </Link>
+        ：原图字迹不清或尚未二次校对。
       </p>
     </div>
   )

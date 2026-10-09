@@ -64,6 +64,18 @@
 
   body {
     background-color: var(--background);
+    background-image:
+      radial-gradient(
+        ellipse 70% 50% at 15% 0%,
+        hsl(38 40% 95% / 0.9),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 60% 45% at 90% 100%,
+        hsl(36 38% 94% / 0.8),
+        transparent 60%
+      );
+    background-attachment: fixed;
     color: var(--foreground);
     font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei",
       "Hiragino Sans GB", sans-serif;
@@ -76,4 +88,81 @@
   .font-serif-cn {
     font-family: var(--font-serif-cn);
   }
+}
+
+/* 朱红印章 */
+.seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--cinnabar);
+  border-radius: 2px;
+  background-color: hsl(3 62% 38% / 0.07);
+  color: var(--cinnabar);
+  font-family: var(--font-serif-cn);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* 竖排小签 */
+.vlabel {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* 垂丝图：直角折线 */
+.lineage ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lineage li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.lineage li > ul {
+  margin-left: 0.25rem;
+}
+
+.lineage li::before,
+.lineage li::after {
+  content: "";
+  position: absolute;
+  left: 0.24rem;
+  background-color: var(--border);
+}
+
+/* 竖线：贯穿同级，接住下一个兄弟 */
+.lineage li::before {
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+
+/* 横线：垂丝 */
+.lineage li::after {
+  top: 0.85rem;
+  width: 0.76rem;
+  height: 1px;
+}
+
+/* 末子：竖线止于横线 */
+.lineage li:last-child::before {
+  bottom: auto;
+  height: 0.85rem;
+}
+
+/* 根节点不画线 */
+.lineage > ul > li {
+  padding-left: 0;
+}
+
+.lineage > ul > li::before,
+.lineage > ul > li::after {
+  content: none;
 }

@@ -126,3 +126,91 @@ export function peopleWithVerify(): Person[] {
 }
 
 export const namedPeople = data.people.filter((p) => !p.isSpouseOnly)
+
+/** 分房基准世代：第 12 代启字辈 */
+export const HOUSE_GENERATION = 12
+
+export interface House {
+  /** 房祖 id */
+  id: string
+  /** 房名，如「启勋房」 */
+  name: string
+  ancestor: Person
+  /** 房内具名人数（不含配偶） */
+  size: number
+  genFrom: number
+  genTo: number
+  /** 房内待核处数 */
+  verifyCount: number
+  /** 房祖上溯至始祖的路径（含两端） */
+  lineage: Person[]
+}
+
+const descendantCache = new Map<string, Person[]>()
+
+/** 全部具名后裔（不含本人） */
+export function descendantsOf(id: string): Person[] {
+  const cached = descendantCache.get(id)
+  if (cached) return cached
+  const out: Person[] = []
+  for (const child of childrenOf(id)) {
+    out.push(child, ...descendantsOf(child.id))
+  }
+  descendantCache.set(id, out)
+  return out
+}
+
+export function membersOfHouse(ancestor: Person): Person[] {
+  return [ancestor, ...descendantsOf(ancestor.id)]
+}
+
+/** 全谱五房，按人口降序 */
+export const houses: House[] = namedPeople
+  .filter((p) => p.generation === HOUSE_GENERATION)
+  .map((ancestor) => {
+    const members = membersOfHouse(ancestor)
+    const gens = members.map((m) => m.generation)
+    return {
+      id: ancestor.id,
+      name: `${ancestor.name}房`,
+      ancestor,
+      size: members.length,
+      genFrom: Math.min(...gens),
+      genTo: Math.max(...gens),
+      verifyCount: members.filter((m) => m.verify).length,
+      lineage: lineagePath(ancestor.id),
+    }
+  })
+  .sort((a, b) => b.size - a.size)
+
+/** 某人所属的房；配偶经其夫归属 */
+export function houseOf(person: Person): House | undefined {
+  const start = person.isSpouseOnly ? spousesOf(person)[0] : person
+  if (!start) return undefined
+  let cur: Person | undefined = start
+  let guard = 0
+  while (cur && guard++ < 100) {
+    if (cur.generation === HOUSE_GENERATION) {
+      const id = cur.id
+      return houses.find((h) => h.id === id)
+    }
+    cur = parentOf(cur)
+  }
+  return undefined
+}
+
+export interface GenerationCount {
+  index: number
+  char: string | null
+  count: number
+}
+
+export const generationCounts: GenerationCount[] = data.generations.map((g) => ({
+  index: g.index,
+  char: g.char,
+  count: namedPeople.filter((p) => p.generation === g.index).length,
+}))
+
+export function peopleOfGeneration(index: number): Person[] {
+  return namedPeople.filter((p) => p.generation === index)
+}
