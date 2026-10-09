@@ -1,0 +1,12 @@
+{
+  // 必须与 Cloudflare 上的 Worker service 同名，否则会新建一个空 Worker
+  "name": "liujiang-longchang-genealogy",
+  "compatibility_date": "2026-10-09",
+  "assets": {
+    "directory": "./dist",
+    // BrowserRouter 是 history 路由，深层路径(/person/:id 等)需由 index.html 接管
+    "not_found_handling": "single-page-application"
+  },
+  // wrangler preview 要求此块存在；本 Worker 无预览专用设置，故留空。删掉会导致部署报错
+  "previews": {}
+}
