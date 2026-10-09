@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude-vscode__getDiagnostics",
+      "mcp__ngc-mcp__crawl_post"
+    ]
+  }
+}
